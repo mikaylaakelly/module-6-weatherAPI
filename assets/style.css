@@ -20,6 +20,19 @@ h1{
     display: flex;
     padding: 10px;
     gap: 35px;
+    position: relative;
+}
+
+#cityHistory {
+    color:palevioletred;
+    font-size: 40px;
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
 .container h3 {
@@ -93,6 +106,8 @@ h1{
 
 }
 
+
+
 .weather-cards {
     display: flex;
     gap: 24px;
@@ -108,3 +123,26 @@ h1{
     font-weight: 400;
 }
 
+#city {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#temp {
+    font-size: 30px;
+    padding: 1;
+    font-weight: 400;
+
+}
+#wind {
+    font-size: 30px;
+    padding: 1;
+    font-weight: 400;
+
+}
+#humidity {
+    font-size: 30px;
+    padding: 1;
+    font-weight: 400;
+
+}

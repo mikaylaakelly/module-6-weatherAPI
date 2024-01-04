@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.3.js">
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +15,28 @@
       <div class="container">
         <div class="city-input">
           <h3>Enter a City Name</h3>
-          <input type="text">
+          <input type="text" class="city-name" placeholder="Enter City">
           <button class="search-button">Search</button>
+          <div id="errorAlert" style="display:none; color: red;"></div>
         </div>
+         
+        
+        <br><ul id="cityHistory">Cities</ul>
+
+
+
         <div class="weather-input">
           <div class="current-weather">
             <div class="info">
-              <h2>Cincinnati:</h2>
-              <h4>Temp: 33°F</h4>
-              <h4>Humidity: 70%</h4>
-              <h4>Wind Speed: 9.0mph</h4>
+              <div id="city">
+                <h2>Cincinnati:</h2></div>
+
+              <div id="temp">
+                <h4>Temp: 33°F</h4></div>
+              <div id="humidity">
+                <h4>Humidity: 70%</h4></div>
+              <div id="wind">
+                <h4>Wind Speed: 9.0mph</h4></div>
             </div>
             <div class="weather-icons">
               <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather-icon">
@@ -91,6 +102,6 @@
 integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
 crossorigin="anonymous"></script>
 
-<script src="script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
