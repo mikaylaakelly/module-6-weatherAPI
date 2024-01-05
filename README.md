@@ -1,4 +1,4 @@
-<h1> Acceptance Criteria
+<h1> Acceptance Criteria</h1>
 <br>GIVEN a weather dashboard with form inputs
 <br>WHEN I search for a city
 <br>THEN I am presented with current and future conditions for that city and that city is added to the search history
