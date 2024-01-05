@@ -12,7 +12,6 @@
 <body>
     <h1>Weather Forecast</h1>
     <div class="container">
-      <div class="container">
         <div class="city-input">
           <h3>Enter a City Name</h3>
           <input type="text" class="city-name" placeholder="Enter City">
@@ -39,16 +38,16 @@
                 <h4>Wind Speed: 9.0mph</h4></div>
             </div>
             <div class="weather-icons">
-              <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather-icon">
-              <h4>Overcast Clouds</h4>
+              <img id= "current-icon" src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather-icon">
+              <h4 id="weather-type">Overcast Clouds</h4>
 
             </div>
           </div>
           <div class="forecast">
             <h2>5 Day Forecast</h2>
-            <ul class="weather-cards">
+            <ul id="weather-cards">
               <li class="cards">
-                <h3>Day 1</h2>
+                <h3>Day 1</h3>
                   <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="weather-icon">
                 <h4>Temp: 33°F</h4>
                 <h4>Humidity: 70%</h4>
@@ -98,10 +97,11 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-crossorigin="anonymous"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
 <script src="assets/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
 </html>
